@@ -3,12 +3,9 @@
 ### Eclipse:
 
 1.  Download **Eclipse Oxygen: Java EE**:
-    * either get the portable version here: https://www.eclipse.org/downloads/eclipse-packages/ » Eclipse IDE **for Java EE Developers** » 64bit. 
+    * either get the portable version here: https://www.eclipse.org/downloads/eclipse-packages/ » Eclipse IDE **for Enterprise Java Developers** » 64bit. 
     * or use this direct link to the currently latest zip: https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-jee-oxygen-1a-win32-x86_64.zip
 2.  Install/unzip eclipse to a folder (e.g. `C:\DATA\DEV\...`)
-3.  Start Eclipse
-4.  Install Spring: Help >> Eclipse Marketplace >> Search and install `Spring Tool Suite`
-5.  Restart Eclipse
 6.  Add `-clean -Xms512m -Xmx1024m` to the `.exe` shortcut
 7.  Clone project with git (e.g. to `C:\DATA\DEV\workspace`). It’s easier not to do this in eclipse, but with the git bash or gui)
 8.  Import project in eclipse: File >> Import >> Existing Maven Project >> point to `pom.xml`
@@ -20,7 +17,7 @@
 11. Change "spaces for tabs" settings: 
     * General: Window >> Preferences >> General >> Editors >> Text Editors >> Check `Insert spaces for tabs`
     * JavaScript: Window >> Preferences >> Javascript >> Code Style >> Formatter >> Edit >> Indentation >> Tab policy >> choose `spaces only`
-        * Set `Indentation size` + `Tab size`: `2`
+        * Set `Indentation size` + `Tab size`: `4`
         * Rename the formatter settings profile to save it
 12. Set maven profiles: right-click the webofneeds project in the package explorer >> Maven >> Select Maven Profiles. check `skip-tests`
 13. If you develop on Windows you will need to setup `node`s `windows-build-tools` (see [this guide](./installation-setting-up-frontend-development-environment.md#installing-windows-build-tools-on-windows))
